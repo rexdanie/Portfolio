@@ -32,10 +32,7 @@
                         <a class="nav-link" href="#project">Project's</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#gallary">Gallery</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact us</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                       </li>
                     </ul>
                   </div>
@@ -70,7 +67,7 @@
             <!-- about me -->
             <section id="about">
                 <div class="container">
-                    <div class="heading">About <span>Me</span></div>
+                    <div class="heading">About <span style="color: black;">Me</span></div>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="card">
@@ -85,8 +82,8 @@
                                 <br><br>It has long been known that I started this website to assist clients, developers, and other students who were in need of assistance with their own projects.
                                 <br><br>Through troubleshooting and ongoing maintenance, I contribute to the scalability and success of businesses in the dynamic digital landscape.
                         <center>
-                            <a href="abouttt.html">
-                              <button id="about-btn">Profile</button>
+                            <a href="#contact">
+                              <button id="about-btn">Contact Me</button>
                             </a>
                         </center>
                         </div>
@@ -203,7 +200,7 @@
                       <div class="card">
                         <img src="" alt="" style="background-color: black;">
                         <div class="info">
-                          <h3>Javazzle</h3>
+                          <h3>Javazzle (GUI)</h3>
                           <p style="margin-top: -9px;">A java project that where you can select a color you want</p>
                         </div>  
                       </div>
@@ -215,6 +212,85 @@
                   </div>
                 </div>
               </section>
+
+
+
+              <!-- Contact Us Section :) -->
+        <section id="contact">
+            <div class="container">
+              <section class="contact-wrapper">
+              <div class="heading">
+                  <h1 style="font-size: 35px;" style="font-family: 'Righteous', cursive">Let's get in touch</h1>
+              </div>
+              <div class="contact-box">
+                  <div class="left-contact">
+                      <h1>Contact Information</h1>
+                      <p>For any questions, you can find me here:</p>
+                      <div class="phone  left-icon">
+                          <i class="las la-phone"></i>
+                          <h3>+63 918 770 8054</h3>
+                      </div>
+  
+                      <div class="mail left-icon">
+                          <i class="las la-envelope"></i>
+                          <h3>rehe.navarro.up@phinmaed.com</h3>
+                      </div>
+  
+                      <div class="location left-icon">
+                          <i class="las la-map-marker-alt"></i>
+                          <h3>Mapandan, Pangasinan, Philippines</h3>
+                      </div>
+                      <div class="small-circle"></div>
+                      <div class="big-circle"></div>
+  
+                  </div>
+                    <div class="right-contact">
+                      <div class="form-container">
+                        <form id="contact-form">
+                          <div class="hello">
+                            <input type="text" placeholder="Name" name="name" required>
+                            <input type="text" placeholder="Email" name="email" required>
+                            <input type="text" placeholder="Phone" name="phone" required>
+                            <input type="text" placeholder="Address" name="address" required>
+                          </div>
+                          <select name="category" id="category" aria-placeholder="" required>
+                            <option value="" select disabled>Select here:</option>
+                            <option value="Student">Student</option>
+                            <option value="Regular ">Regular</option>
+                            <option value="Teacher">Teacher</option>
+                            <option value="Programmer">Programmer</option>
+                            <option value="Influencer">Influencer</option>
+                          </select>
+                          <textarea name="message" placeholder="Message" id="" cols="30" rows="" required></textarea>
+                          <button type="submit">Submit</button>
+                          <script>
+                            const form = document.getElementById("contact-form");
+  
+                            form.addEventListener("submit", (event) => {
+                              event.preventDefault();
+                              const name = form.elements["name"].value;
+                              const email = form.elements["email"].value;
+                              const phone = form.elements["phone"].value;
+                              const address = form.elements["address"].value;
+                              const category = form.elements["category"].value;
+                              const message = form.elements["message"].value;
+  
+                              if (name && email && phone && address && category && message) {
+                                alert("Submit successfully!");
+                                form.reset(); // reset the form after submission
+                              } else {
+                                alert("Please fill in all required fields.");
+                              }
+                            });
+                          </script>
+                        </form>
+                      </div>
+                    </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+          <!-- End of Contact Us Section :( -->
 
 
     
